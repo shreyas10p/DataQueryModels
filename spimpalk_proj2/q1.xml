@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio[
+<!ELEMENT biblio (author*)>
+<!ELEMENT author (name,book+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT book (title, price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST book year CDATA #REQUIRED>
+]>
+
+
+<!--Write the XML solution here -->
+<biblio>
+    <author>
+        <name>Jane Austin</name>
+        <book year="1813">
+            <title>Pride and Prejudice</title>
+            <price>6</price>
+        </book>
+        <book year="1811">
+            <title>Sense and Sensibility</title>
+            <price> 5</price>
+        </book>
+        <book year="1815">
+            <title>Emma Illustrated</title>
+            <price> 5</price>
+        </book>
+
+    </author>
+    <author>
+        <name>Khaled Hosseini</name>
+        <book year="2003">
+            <title>Kite Runner</title>
+            <price> 4</price>
+        </book>
+        <book year="">
+            <title>A Thousand Splendid Sons</title>
+            <price> 4</price>
+        </book>
+    </author>
+</biblio>

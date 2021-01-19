@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Write the DTD solution here -->
+<!DOCTYPE biblio[
+<!ELEMENT biblio (book*)>
+<!ELEMENT book (author+,title,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT author (name)>
+<!ELEMENT name (#PCDATA)>
+
+<!ATTLIST book year CDATA #REQUIRED>
+]>
+
+<biblio>
+    <book year="...">
+        <author>
+            <name>...</name>
+        </author>
+        <title>...</title>
+        <price>...</price>
+    </book>
+    <book year="...">
+        <author>
+            <name>...</name>
+        </author>
+        <author>
+            <name>...</name>
+        </author>
+        <title>...</title>
+        <price>...</price>
+    </book>
+</biblio>
